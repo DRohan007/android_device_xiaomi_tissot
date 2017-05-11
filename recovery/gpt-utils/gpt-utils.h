@@ -79,7 +79,9 @@ extern "C" {
 #define AB_SLOT_A_SUFFIX                "_a"
 #define AB_SLOT_B_SUFFIX                "_b"
 #define PTN_XBL                         "xbl"
-#define PTN_SWAP_LIST                   PTN_XBL, \
+#define PTN_XBL_CFG                     "xbl_config"
+
+#define PTN_SWAP_LIST                   PTN_XBL, PTN_XBL_CFG, \
         "abl", "aboot", "aes", "apdp", "bootlocker", "cmnlib", "cmnlib32", \
         "cmnlib64", "devcfg", "dtbo", "hosd", "hyp", "laf", "keymaster", \
         "lockbooter", "msadp", "pmic", "rpm", "storsec", \
